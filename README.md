@@ -9,6 +9,10 @@ vsearch --cluster_fast ITSoneDB_total_fasta_rel138.fa -uc vsearch_cluster_99 \
 --centroids 99_ref_ITSoneDB.fa --id 0.99
 ```
 # Taxonomic annotation
+![tree_figure](./tree.png) 
+
+***Figure1:*** *A representation of a list of nodes represented belonging to a cluster in a reference taxonomy.* 
+
 The obtained cluters represenative sequences were taxonomically labelled by using two approaches:  
 * **Lowest common ancestor (LCA)**: this algorithm assigne a taxonomica label by considerign the lowest taxonomic rank common to all the sequences belonging to a cluster.   
 * **TANGO** algorithm: this algorithm finds the most likely node by inferrig F-measures [4].  
