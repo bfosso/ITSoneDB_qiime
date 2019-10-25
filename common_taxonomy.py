@@ -22,9 +22,6 @@ def options():
     return parser.parse_args()
 
 
-# vsearch --cluster_fast qiime_format/ITS1db_all_data.fasta \
-# -uc qiime_format/vsearch_cluster --centroids qiime_format/97_ref_ITSoneDB.fa --id 0.97
-
 
 def clustering_execution(fasta, id_perc):
     cluster = "vsearch_cluster_%i" % int(id_perc * 100)
