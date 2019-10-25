@@ -15,7 +15,7 @@ The obtained cluters represenative sequences were taxonomically labelled by usin
 
 # Data
 Data available in this repository:  
-1. [`ITSoneDB_total_fasta_rel138.fa.gz`](https://www.dropbox.com/s/0mozfmhgamq7ems/ITSoneDB_total_fasta_rel138.fa.gz?dl=0): compressed fasta file containing the ITSoneDB ITS1 sequences;  
+1. [`ITSoneDB_total_fasta_rel138.fa.gz`](https://www.dropbox.com/s/0mozfmhgamq7ems/ITSoneDB_total_fasta_rel138.fa.gz?dl=0): compressed fasta file containing the ITSoneDB ITS1 sequences (use the link to download the file);  
 2. `99_ref_ITSoneDB.fa.gz`: ITS1 clusters representative sequences;  
 3. `tax_99_ref_ITSoneDB.txt.gz`: NCBI taxonomic path associated to the clusters representative sequences inferred by using the LCA algorithm;  
 4. `tax_99_ref_ITSoneDB_tango_based.txt.gz`: NCBI taxonomic path associated to the clusters representative sequences inferred by using the TANGO algorithm;  
