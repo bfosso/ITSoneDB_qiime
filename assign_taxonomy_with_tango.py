@@ -6,7 +6,7 @@ import shlex
 
 
 def options():
-    parser = argparse.ArgumentParser(description="Format ITSoneDB fasta sequence and taxonomy for QIIME",
+    parser = argparse.ArgumentParser(description="Format ITSoneDB fasta sequences and taxonomy for QIIME. Assumes VSEARCH in in your path.",
                                      prefix_chars="-")
     parser.add_argument("-f", "--itsonedb_total_fasta", type=str,
                         help="file containing all the ITSoneDB fasta sequences",
@@ -20,16 +20,13 @@ def options():
     return parser.parse_args()
 
 
-# vsearch --cluster_fast qiime_format/ITS1db_all_data.fasta \
-# -uc qiime_format/vsearch_cluster --centroids qiime_format/97_ref_ITSoneDB.fa --id 0.97
-
 
 def clustering_execution(fasta, id_perc):
     cluster = "vsearch_cluster_%i" % int(id_perc * 100)
     centroids = "%i_ref_ITSoneDB.fa" % int(id_perc * 100)
-    # cmd = shlex.split("vsearch --cluster_fast %s -uc %s --centroids %s --id %f" % (fasta, cluster, centroids, id_perc))
-    # p = subprocess.Popen(cmd)
-    # p.wait()
+    cmd = shlex.split("vsearch --cluster_fast %s -uc %s --centroids %s --id %f" % (fasta, cluster, centroids, id_perc))
+    p = subprocess.Popen(cmd)
+    p.wait()
     cluster_dict = {}
     with open(cluster) as a:
         for line in a:
@@ -70,7 +67,7 @@ def generate_taxonomic_info(taxa_folder, itsonedb_fasta):
     return acc2node, node2order, node2name, node2parent
 
 
-# formattazione della tassonomia NCBI
+# NCBI taxonomy pre-processing
 # perl preprocess.pl --taxonomy-type NCBI --taxonomy ../../../data_transfer_rel_138/ncbi_taxonomy_data/nodes.dmp  --output ITSoneDB_r138_ref
 
 def tango_excution(cluster_dict, acc2node):
