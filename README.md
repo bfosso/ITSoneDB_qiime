@@ -40,7 +40,7 @@ qiime tools import \
 ```
 
 # References
-1. Santamaria M, Fosso B, Licciulli F, Balech B, Larini I, Grillo G, et al. ITSoneDB: a comprehensive collection of eukaryotic ribosomal RNA Internal Transcribed Spacer 1 (ITS1) sequences. Nucleic Acids Res. 2018;46: D127–D132. doi:10.1093/nar/gkx855
-2. Bolyen E, Rideout JR, Dillon MR, Bokulich NA, Abnet C, Al-Ghalith GA, et al. QIIME 2: Reproducible, interactive, scalable, and extensible microbiome data science. PeerJ Inc.; 2018 Dec. Report No.: e27295v2. doi:10.7287/peerj.preprints.27295v2
-3. Rognes T, Flouri T, Nichols B, Quince C, Mahe F. VSEARCH: a versatile open source tool for metagenomics. PeerJ. 2016;4: e2584. doi:10.7717/peerj.2584
-4. Alonso-Alemany D, Barre A, Beretta S, Bonizzoni P, Nikolski M, Valiente G. Further Steps in TANGO: improved taxonomic assignment in metagenomics. Bioinformatics. 2014;30: 17–23. doi:10.1093/bioinformatics/btt256
+1. [Santamaria M, Fosso B, Licciulli F, Balech B, Larini I, Grillo G, et al. ITSoneDB: a comprehensive collection of eukaryotic ribosomal RNA Internal Transcribed Spacer 1 (ITS1) sequences. Nucleic Acids Res. 2018;46: D127–D132. doi:10.1093/nar/gkx855](https://academic.oup.com/nar/article/46/D1/D127/4210943)
+2. [1. Bolyen E, Rideout JR, Dillon MR, Bokulich NA, Abnet C, Al-Ghalith GA, et al. QIIME 2: Reproducible, interactive, scalable, and extensible microbiome data science. PeerJ Inc.; 2018 Dec. Report No.: e27295v2. doi:10.7287/peerj.preprints.27295v2](https://www.nature.com/articles/s41587-019-0209-9)
+3. [Rognes T, Flouri T, Nichols B, Quince C, Mahe F. VSEARCH: a versatile open source tool for metagenomics. PeerJ. 2016;4: e2584. doi:10.7717/peerj.2584](https://peerj.com/articles/2584/)
+4. [Alonso-Alemany D, Barre A, Beretta S, Bonizzoni P, Nikolski M, Valiente G. Further Steps in TANGO: improved taxonomic assignment in metagenomics. Bioinformatics. 2014;30: 17–23. doi:10.1093/bioinformatics/btt256](https://academic.oup.com/bioinformatics/article/30/1/17/234810)
